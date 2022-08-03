@@ -14,7 +14,7 @@ cur = conn.cursor()
 
 
 sql = """select * from northwind.orders o where cast(order_date as date) = '"""+sys.argv[1]+"""'"""
-csv_file_path = '/opt/airflow/dags/output/syarif/orders/orders_'+sys.argv[1]+'.csv'
+csv_file_path = '/opt/airflow/dags/output/ricko/orders/orders_'+sys.argv[1]+'.csv'
 
 try:
     cur.execute(sql)
